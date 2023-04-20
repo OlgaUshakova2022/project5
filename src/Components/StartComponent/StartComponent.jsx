@@ -48,22 +48,22 @@ function StartComponent(props) {
  
   const getData = (movieType)=>{
 
-          if(movieType=="Popular"){
+          if(movieType==="Popular"){
               url=base_url+"/discover/movie?sort_by=popularity.desc"+API_key;
       
           }
           
-          if (movieType=='Kids'){
+          if (movieType==='Kids'){
               url=base_url+'/discover/movie?certification_country=US&certification.lte=G&sort_by=popularity.desc'+API_key;
              
           }
-          if (movieType=='Drama'){
+          if (movieType==='Drama'){
               url=base_url+'/discover/movie?with_genres=18&primary_release_year=2014'+API_key;
           }
           if (movieType=='Comedie'){
               url=base_url+'/discover/movie?with_genres=35&with_cast=23659&sort_by=revenue.desc' +API_key;
           }
-          if (movieType=='Theatre'){
+          if (movieType==='Theatre'){
             url=base_url+'/discover/movie?primary_release_date.gte=2014-09-15&primary_release_date.lte=2014-10-22'+API_key;
         }
            setUrl(url);
@@ -71,7 +71,7 @@ function StartComponent(props) {
 
 
   const searchMovie=(evt)=>{
-      if (evt.key=="Enter")
+      if (evt.key==="Enter")
       {url=base_url+'/search/movie?api_key=b3cfc2a04127d0d4f502e77f574fb609&query='+ search;
      setUrl(url); 
      setSearch(' ');

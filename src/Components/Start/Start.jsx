@@ -1,7 +1,7 @@
 import React from 'react'
 import './Start.css';
-import logo from '../../images/Image\ \(24\).jpg'; 
-import Photo from '../../images/img.jpg';
+import logo from '../../images/Image24.jpg'; 
+import Photo from '../../images/Image24.jpg';
 
 function Start() {
   return (
