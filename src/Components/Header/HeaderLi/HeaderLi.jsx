@@ -9,12 +9,12 @@ function HeaderLi (props) {
         <nav>
             <ul>
                 <li> 
-                  <a href='#'
+                  <button 
                  name={props.genres}
                  onClick={(e)=>{
                                 props.getData(e.target.name)
                             }}
-                            >{props.genres}</a>
+                            >{props.genres}</button>
                 </li>
             </ul>
        </nav>

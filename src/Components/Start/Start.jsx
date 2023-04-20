@@ -1,13 +1,13 @@
 import React from 'react'
 import './Start.css';
 import logo from '../../images/Image24.jpg'; 
-import Photo from '../../images/Image24.jpg';
+
 
 function Start() {
   return (
     <div className='startWrapper'>
       <div className='wrapper'>
-        <img src={logo} alt="Logo" className='Photo'/>
+        <img src={logo} alt="Logo" className='photo'/>
         <div className='start'>
             <span className='startSpan'>Welcome to my first react project</span>  
         </div>

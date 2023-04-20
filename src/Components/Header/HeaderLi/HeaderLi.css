@@ -12,7 +12,7 @@ nav ul li{
     list-style: none;
     margin-right: 1rem;
 }
-nav ul li a {
+nav ul li button {
     position: relative;
     text-decoration: none;
     color: white;
@@ -20,8 +20,12 @@ nav ul li a {
     font-weight: bold;
     padding: 0.2rem 0.6rem;
     position: relative;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+   border: white;
+
 }
-nav ul li a::before{
+nav ul li button::before{
     content: '';
     position: absolute;
     top: -10px;
@@ -32,16 +36,16 @@ nav ul li a::before{
     background-color: var(--primary-color);
     transition: all 0.3s ease-in-out;
 }
-nav ul li a:hover:before{
+nav ul li button:hover:before{
 width: 100%;
 }
-nav ul li a:focus{
+nav ul li button:focus{
     background-color: var(--primary-color);
     opacity: 0.2px;
     border-radius: 20px;
 }
 
-nav ul li a:focus::before{
+nav ul li button:focus::before{
     width: 0%;
 }
 

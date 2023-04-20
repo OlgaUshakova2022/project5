@@ -24,7 +24,7 @@ function StartComponent(props) {
     console.log({isClicked});
   };
 
-  const{theme,setTheme}=useTheme();
+  const{setTheme}=useTheme();
 
   const handleLightThemeClick=()=>{
     setTheme('light')
@@ -60,7 +60,7 @@ function StartComponent(props) {
           if (movieType==='Drama'){
               url=base_url+'/discover/movie?with_genres=18&primary_release_year=2014'+API_key;
           }
-          if (movieType=='Comedie'){
+          if (movieType==='Comedie'){
               url=base_url+'/discover/movie?with_genres=35&with_cast=23659&sort_by=revenue.desc' +API_key;
           }
           if (movieType==='Theatre'){
