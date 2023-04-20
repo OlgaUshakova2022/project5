@@ -9,7 +9,7 @@ const Card = (props)=>{
     return(
         <>
             <div className="movie">
-                <img src={img_path+props.info.poster_path} className="poster"/>
+                <img src={img_path+props.info.poster_path} className="poster" alt="photo"/>
                 <div className="movie-detalis">
                     <div className="box">
                             <h4 className="title">{props.info.title}</h4>
